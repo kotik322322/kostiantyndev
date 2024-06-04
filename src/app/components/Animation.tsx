@@ -40,6 +40,7 @@ const Animation = ({ active, onClick }: AnimationProps) => {
         variants={sizeVariants}
         initial={'big'}
         animate={active ? 'small' : 'big'}
+        className='border-2 border-[#3c3c3c] rounded-full'
       >
         <motion.svg
           animate={{
