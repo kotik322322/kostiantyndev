@@ -11,7 +11,8 @@ import profilePic from '../../../public/profile.jpg';
 
 const AboutPage = () => {
   return (
-    <div className="w-full p-8 relative bg-black -z-50">
+    <div className="w-full p-8 relative">
+      <div className="bg-black -z-50 absolute top-0 bottom-0 left-0 right-0" />
       <ParticlesComponent config={darkConfig} />
       <Logo textColor="#ffffff" />
 

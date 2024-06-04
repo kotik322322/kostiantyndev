@@ -12,7 +12,7 @@ export default function Home() {
   const activeHandler = () => setActive(!active);
   return (
     <main className="w-full h-auto p-8 flex-1 relative overflow-hidden">
-      <Logo textColor={"#000000"} />
+      <Logo textColor={'#000000'} />
 
       <motion.div
         initial={{ rotate: -90, top: '25%', left: -50 }}
@@ -22,22 +22,15 @@ export default function Home() {
           transition: { duration: 1, delay: 0.5, type: 'spring' },
         }}
         whileHover={{ scale: 1.1 }}
-        className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${active && 'text-white shadow-text'}`}>
-        <Link href={'/work'}>Work</Link>
+        className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${
+          active && 'text-white shadow-text'
+        }`}>
+        <div className="relative group">
+          <Link href={'/projects'}>Projects</Link>
+          <span className="w-0 group-hover:w-full h-[1.5px] bg-black absolute -bottom-1 right-0 transition-[width] ease duration-300 " />
+        </div>
       </motion.div>
 
-      <motion.div
-        initial={{ rotate: 45 , top: '25%', right: -100 }}
-        animate={{
-          top: '6%',
-          right: '15px',
-
-          transition: { duration: 1, delay: 0.5, type: 'spring' },
-        }}
-        whileHover={{ scale: 1.1 }}
-        className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${active && 'text-white shadow-text'}`}>
-        <Link href={'/about'}>About</Link>
-      </motion.div>
 
       <motion.div
         initial={{ rotate: -90, top: '50%', left: -50 }}
@@ -47,8 +40,14 @@ export default function Home() {
           transition: { duration: 1, delay: 0.5, type: 'spring' },
         }}
         whileHover={{ scale: 1.1 }}
-        className={`absolute font-bold text-base z-50  w-20 flex justify-center items-center ${active && 'text-white shadow-text'}`}>
-        <Link href={'/skills'}>Skills</Link>
+        className={`absolute font-bold text-base z-50  w-20 flex justify-center items-center ${
+          active && 'text-white shadow-text'
+        }`}>
+    
+        <div className="relative group">
+          <Link href={'/skills'}>Skills</Link>
+          <span className="w-0 group-hover:w-full h-[1.5px] bg-black absolute -bottom-1 right-0 transition-[width] ease duration-300 " />
+        </div>
       </motion.div>
 
       <motion.div
@@ -59,11 +58,16 @@ export default function Home() {
           transition: { duration: 1, delay: 0.5, type: 'spring' },
         }}
         whileHover={{ scale: 1.1 }}
-        className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${active && 'text-white shadow-text'}`}>
-        <Link href={'/contact'}>Contact</Link>
+        className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${
+          active && 'text-white shadow-text'
+        }`}>
+        <div className="relative group">
+          <Link href={'/about'}>About</Link>
+          <span className="w-0 group-hover:w-full h-[1.5px] bg-black absolute -bottom-1 right-0 transition-[width] ease duration-300 " />
+        </div>
       </motion.div>
 
-      <Socials themeColor='#000000'/>
+      <Socials themeColor="#000000" />
 
       <Animation active={active} onClick={activeHandler} />
       <Promo active={active} />

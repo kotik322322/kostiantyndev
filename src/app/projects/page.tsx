@@ -2,20 +2,17 @@
 import React from 'react';
 import ParticlesComponent from '../components/ParticleComponent';
 import darkConfig from '../data/darkConfig.json';
-import Typed from 'typed.js';
-
-import codeImage from '../../../public/code.png';
-import Image from 'next/image';
 import Logo from '../components/Logo';
 import FeaturedProject from '../components/FeaturedProject';
 import project1 from '../../../public/website1.jpg';
 import Project from '../components/Project';
 
-const WorkPage = () => {
+const ProjectsPage = () => {
   return (
     <div
-      className="
-      w-full h-auto p-8">
+      className="w-full h-auto p-8 ">
+      <div className="bg-black -z-50 absolute top-0 bottom-0 left-0 right-0" />
+
       <ParticlesComponent config={darkConfig} />
       <Logo textColor="#ffffff" />
 
@@ -40,7 +37,7 @@ const WorkPage = () => {
             github={'https://github.com/kotik322322/next-nike-v2'}
           />
         </div>
-        <div className="col-span-12 lg:col-span-6">
+        {/* <div className="col-span-12 lg:col-span-6">
           <Project
             title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
             summary="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
@@ -49,10 +46,10 @@ const WorkPage = () => {
             img={project1}
             github={'https://github.com/kotik322322/next-nike-v2'}
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default WorkPage;
+export default ProjectsPage;
