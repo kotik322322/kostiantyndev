@@ -28,9 +28,10 @@ const Skill = ({ name, x, y }: SkillProps) => {
 
 const Skills = () => {
   return (
-    <div className="relative h-screen w-full bg-black flex flex-col justify-center items-center">
+    <div className="relative w-full min-h-screen p-8 flex flex-col ">
+      <div className="bg-black -z-50 absolute top-0 bottom-0 left-0 right-0" />
       <Logo textColor="white" />
-      {/* <ParticlesComponent config={darkConfig}/> */}
+      <ParticlesComponent config={darkConfig} />
       <h2
         className="inline-block absolute top-20 lg:top-0  right-1/2 translate-x-1/2 z-50 font-bold text-4xl  text-center text-white
       lg:text-8xl
@@ -39,22 +40,22 @@ const Skills = () => {
       </h2>
 
       <div
-        className="w-full relative flex items-center justify-center rounded-full bg-circularLight lg:bg-circularLightLg
+        className="w-full relative flex items-center justify-center rounded-full bg-circularLight lg:bg-circularLightLg flex-1
       h-[80%] lg:h-[100%]">
         <motion.div className="flex items-center justify-center rounded-full font-semibold  text-black p-5 cursor-pointer bg-white">
           Web
         </motion.div>
 
-        <Skill name="HTML" x="-20vw" y="2vw" />
-        <Skill name="CSS" x="-5vw" y="-10vw" />
-        <Skill name="Javascript" x="20vw" y="6vw" />
-        <Skill name="React" x="0vw" y="12vw" />
-        <Skill name="NextJs" x="20vw" y="-21vw" />
-        <Skill name="Redux Toolkit" x="15vw" y="-12vw" />
-        <Skill name="MongoDb" x="32vw" y="-5vw" />
-        {/* <Skill name="ExpressJs" x="0vw" y="-20vw" /> */}
-        <Skill name="Tailwind CSS" x="-25vw" y="18vw" />
-        <Skill name="Git" x="18vw" y="18vw" />
+        <Skill name="HTML" x="35vw" y="-25vh" />
+        <Skill name="CSS" x="35vw" y="-5vh" />
+        <Skill name="Javascript" x="-35vw" y="25vh" />
+        <Skill name="React" x="-20vw" y="5vh" />
+        <Skill name="NextJs" x="5vw" y="-32vh" />
+        <Skill name="Redux Toolkit" x="15vw" y="35vh" />
+        <Skill name="MongoDb" x="-7vw" y="27vh" />
+        <Skill name="ExpressJs" x="-22vw" y="-33vh" />
+        <Skill name="Tailwind CSS" x="30vw" y="18vh" />
+        <Skill name="Git" x="-35vw" y="-10vh" />
       </div>
     </div>
   );
