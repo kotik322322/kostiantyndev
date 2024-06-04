@@ -60,7 +60,7 @@ const Skills = () => {
           Web
         </motion.div>
 
-        {SkillsList.map(({ name, x, y }, key) => (
+        {SkillsList.map(({ name, x, y }) => (
           <Skill name={name} x={x} y={y} key={name}/>
         ))}
       </div>
