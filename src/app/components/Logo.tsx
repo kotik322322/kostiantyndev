@@ -10,8 +10,8 @@ interface LogoProps {
 
 const Logo = ({ textColor }: LogoProps) => {
   return (
-    <Link href={'/'} style={{color:textColor}} className={`${pacifico.className} absolute top-7 text-xl left-20  font-bold`}>
-      KD
+    <Link href={'/'} style={{color:textColor}} className={`${pacifico.className} text-xl font-bold`}>
+      KostiantynDev
     </Link>
   );
 };

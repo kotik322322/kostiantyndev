@@ -7,60 +7,59 @@ import spacemanImg from '../../../public/spaceman.png';
 import Image from 'next/image';
 import { motion, useAnimate } from 'framer-motion';
 import Logo from '../components/Logo';
-
-
-import codeImage from '../../../public/code.png';
+import profilePic from '../../../public/profile.jpg';
 
 const AboutPage = () => {
-  const [scope, animate] = useAnimate();
-
-  useEffect(() => {
-    const animateToTop = async () => {
-      await animate(scope.current, { top: '10%', right: '5%' }, { duration: 1.5 });
-      await animate(
-        scope.current,
-        { x: [0, -30, 0], y: [0, -30, 0] },
-        { duration: 4, ease: 'easeInOut', repeat: Infinity },
-      );
-    };
-
-    animateToTop();
-  }, [animate, scope]);
   return (
-    <div className="w-full min-h-screen relative flex flex-col justify-center items-center text-white overflow-hidden  ">
+    <div className="w-full p-8 relative bg-black -z-50">
       <ParticlesComponent config={darkConfig} />
-      <Logo textColor='#ffffff'/>
-      {/* <h3 className='fixed top-10 left-4 text-[calc(4rem+5vw)] font-bold text-white/30'>About</h3> */}
-      <motion.div ref={scope} className="absolute -bottom-[120px] right-0">
-        <Image src={spacemanImg} width={65} height={100} alt="" />
-      </motion.div>
-      <Socials themeColor="#ffffff" />
-      
-      <Image src={codeImage} alt="" className='w-3/4 lg:w-1/2 max-h-screen'/>
-      {/* <div className='flex flex-col items-center justify-center'>
-        <Image src={codeImage} alt="" className='w-full'/>
-        <div className='text-white px-8'>
-          <h2 className='text-base text-white/75'>Hi, Im Kostiantyn Marfin</h2>
-          <p>Im a Frontend Developer</p>
-          <p>
-            I specialize in crafting dynamic and user-friendly interfaces to enhance user
-            interaction. My approach to front-end development is grounded in modern technologies and
-            best practices.
+      <Logo textColor="#ffffff" />
+
+      <div className="w-full flex flex-col justify-center items-center gap-y-4">
+
+        {/* Profile Image */}
+        <div className="w-full relative rounded-2xl border-2 border-solid border-dark bg-light p-4 lg:p-8 ">
+          <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+          <Image
+            src={profilePic}
+            alt="Kostiantyn Marfin Profile Image"
+            className="w-full h-auto rounded-2xl"
+          />
+        </div>
+        {/* Profile Image */}
+
+        {/* Biography */}
+        <div className="w-full flex flex-col items-start justify-start gap-y-4 text-light">
+          <h2 className="text-lg font-bold uppercase">
+            Biography
+          </h2>
+
+          <p className="font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
+            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
+            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
+            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
+            aliquam cumque ea maxime accusamus nesciunt!
+          </p>
+
+          <p className=" font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
+            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
+            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
+            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
+            aliquam cumque ea maxime accusamus nesciunt!
+          </p>
+
+          <p className="font-medium text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
+            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
+            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
+            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
+            aliquam cumque ea maxime accusamus nesciunt!
           </p>
         </div>
-      L</div> */}
-      {/* <div className="w-[208px] px-6 py-9 italic text-sm border-2 border-white z-50 backdrop-blur-sm">
-        <span className=' block mb-4'>
-          As a web developer based in Limassol, I&apos;m passionate about crafting websites that are
-          not just functional but also beautifully simple.
-        </span>
-
-        <span>
-          {' '}
-          Every line of code is a brushstroke to me, and each website is a canvas where I express my
-          vision. Let&apos;s connect through social media and bring your ideas to life!
-        </span>
-      </div> */}
+        {/* Biography End */}
+      </div>
     </div>
   );
 };

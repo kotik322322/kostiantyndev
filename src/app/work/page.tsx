@@ -15,12 +15,11 @@ const WorkPage = () => {
   return (
     <div
       className="
-    w-full 
-    px-6">
+      w-full h-auto p-8">
       <ParticlesComponent config={darkConfig} />
-      <Logo textColor="#000000" />
+      <Logo textColor="#ffffff" />
 
-      <div className="grid grid-cols-12 gap-12 gap-x-0 lg:gap-x-16">
+      <div className="grid grid-cols-12 gap-12 gap-x-0 lg:gap-x-16 mt-10">
         <div className="col-span-12">
           <FeaturedProject
             title="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum."
