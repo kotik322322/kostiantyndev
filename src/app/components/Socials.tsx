@@ -21,7 +21,7 @@ const Socials = ({themeColor}:SocialsProps) => {
         animate={{ scale: [0, 1, 1.5, 1] }}
         transition={{ type: 'spring', duration: 1, delay: 1 }}>
         <Link style={{ color: 'inherit' }} href={'https://github.com/kotik322322'}>
-          <FaGithubSquare className="text-2xl rounded-full" />
+          <FaGithubSquare className="text-2xl rounded-full hover:scale-105" />
         </Link>
       </motion.div>
       <motion.div
