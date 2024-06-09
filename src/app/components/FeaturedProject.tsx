@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { IoLogoGithub } from "react-icons/io";
+import { IoLogoGithub } from 'react-icons/io';
 
 interface FeaturedProjectProps {
   type: string;
@@ -55,7 +55,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedPr
             href={github}
             target="_blank"
             className="hover:-translate-y-1 transition-all duration-200">
-            <IoLogoGithub className='text-[32px]'/>
+            <IoLogoGithub className="text-[32px]" />
           </Link>
           <Link
             href={link}

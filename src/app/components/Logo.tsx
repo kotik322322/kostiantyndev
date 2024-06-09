@@ -11,7 +11,7 @@ interface LogoProps {
 const Logo = ({ textColor }: LogoProps) => {
   return (
     <Link href={'/'} style={{color:textColor}} className={`${pacifico.className} text-xl font-bold`}>
-      KostiantynDev
+      KMDev
     </Link>
   );
 };
