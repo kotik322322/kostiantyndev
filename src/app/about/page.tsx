@@ -27,30 +27,27 @@ const AboutPage = () => {
 
         {/* Biography */}
         <div className="w-full flex flex-col items-start justify-start gap-y-4 text-light md:w-1/2 lg:w-2/3 text-sm lg:text-base">
-          <h2 className="text-lg lg:text-xl font-bold uppercase">Biography</h2>
+          {/* <h2 className="text-lg lg:text-xl font-bold uppercase">Biography</h2> */}
 
           <p className="font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
-            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
-            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
-            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
-            aliquam cumque ea maxime accusamus nesciunt!
+            My name is Konstantin Marfin, and I am an experienced frontend developer with a strong
+            understanding and skill set in creating web applications. In my work, I utilize modern
+            technologies and tools that enable me to effectively solve complex problems and create
+            appealing user interfaces.
           </p>
 
           <p className=" font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
-            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
-            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
-            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
-            aliquam cumque ea maxime accusamus nesciunt!
+            My core technology stack includes JavaScript, React, Next.js, and Redux Toolkit, which
+            ensure high performance and flexibility of applications. Using TailwindCSS, I can
+            quickly and easily build stylish and responsive interfaces, while Framer Motion adds
+            animations and interactive elements, making the user experience more engaging and
+            dynamic.
           </p>
 
           <p className="font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, neque tenetur. Ea
-            dolorem minus quam, exercitationem eos, magni quidem, inventore praesentium cupiditate
-            ad perferendis. Voluptatibus, ullam enim quia dolorem incidunt impedit libero dolorum?
-            Repellendus, eveniet neque, labore laboriosam aperiam, natus perspiciatis officiis
-            aliquam cumque ea maxime accusamus nesciunt!
+            I also have substantial experience working with MongoDB and Express.js, allowing me to
+            develop comprehensive full-stack applications. My projects are always focused on user
+            convenience and high code quality, ensuring long-term support and scalability.
           </p>
         </div>
         {/* Biography End */}
