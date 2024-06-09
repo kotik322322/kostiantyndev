@@ -1,6 +1,6 @@
 import React from 'react';
 import { easeIn, motion } from 'framer-motion';
-import promoImg from '../../../public/prof1.jpg';
+import promoImg from '../../../public/prof2.png';
 import Image from 'next/image';
 
 interface PromoProps {

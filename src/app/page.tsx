@@ -31,7 +31,6 @@ export default function Home() {
         </div>
       </motion.div>
 
-
       <motion.div
         initial={{ rotate: -90, top: '50%', left: -50 }}
         animate={{
@@ -43,7 +42,6 @@ export default function Home() {
         className={`absolute font-bold text-base z-50  w-20 flex justify-center items-center ${
           active && 'text-white shadow-text'
         }`}>
-    
         <div className="relative group">
           <Link href={'/skills'}>Skills</Link>
           <span className="w-0 group-hover:w-full h-[1.5px] bg-black absolute -bottom-1 right-0 transition-[width] ease duration-300 " />
