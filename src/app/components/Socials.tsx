@@ -4,9 +4,10 @@ import React from 'react';
 import Link from 'next/link';
 import {
   FaGithubSquare,
-  FaTwitterSquare,
+  // FaTwitterSquare,
   FaFacebookSquare,
   FaInstagramSquare,
+  FaTelegram
 } from 'react-icons/fa';
 
 interface SocialsProps {
@@ -15,9 +16,9 @@ interface SocialsProps {
 
 const socials = [
   { href: 'https://github.com/kotik322322', icon: FaGithubSquare, delay: 1 },
-  { href: 'https://twitter.com/kotik322322', icon: FaTwitterSquare, delay: 1.2 },
-  { href: 'https://facebook.com/kotik322322', icon: FaFacebookSquare, delay: 1.4 },
-  { href: 'https://youtube.com', icon: FaInstagramSquare, delay: 1.6 },
+  { href: 'https://t.me/moore_moore', icon: FaTelegram, delay: 1.2 },
+  { href: 'https://www.facebook.com/share/gVoPvXXcG6v4pSHh/?mibextid=LQQJ4d', icon: FaFacebookSquare, delay: 1.4 },
+  { href: 'https://www.instagram.com/moore_moore_moore_', icon: FaInstagramSquare, delay: 1.6 },
 ];
 
 const Socials = ({ themeColor }: SocialsProps) => {
