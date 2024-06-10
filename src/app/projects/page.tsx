@@ -21,7 +21,7 @@ const ProjectsPage = () => {
           <FeaturedProject
             title="Nike"
             summary="For my portfolio, I developed a mock Nike website using Next.js, Redux Toolkit, MongoDB, TailwindCSS, Framer Motion, and TypeScript. This project showcases my ability to create responsive, dynamic web applications with a sleek design and smooth animations. It demonstrates my skills in full-stack development, state management, and modern frontend technologies."
-            link={'https://github.com/kotik322322/next-nike-v2'}
+            link={'https://next-nike-sepia.vercel.app'}
             type={'Featured Project'}
             img={project1}
             github={'https://github.com/kotik322322/next-nike-v2'}
@@ -31,7 +31,7 @@ const ProjectsPage = () => {
           <Project
             title="Portfolio Website"
             summary="This is my portfolio website project. It showcases my skills and expertise in web development using Next.js, TailwindCSS, Framer Motion, and TypeScript. The site is designed to provide a dynamic and interactive user experience while highlighting my professional capabilities."
-            link={'https://github.com/kotik322322/kostiantyndev'}
+            link={'https://kostiantyndev.vercel.app/'}
             type={'Project'}
             img={project2}
             github={'https://github.com/kotik322322/kostiantyndev'}
