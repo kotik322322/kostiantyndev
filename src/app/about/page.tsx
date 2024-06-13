@@ -27,7 +27,6 @@ const AboutPage = () => {
 
         {/* Biography */}
         <div className="w-full flex flex-col items-start justify-start gap-y-4 text-light md:w-1/2 lg:w-2/3 text-sm lg:text-base">
-          {/* <h2 className="text-lg lg:text-xl font-bold uppercase">Biography</h2> */}
 
           <p className="font-medium">
             My name is Konstantin Marfin, and I am an experienced frontend developer with a strong

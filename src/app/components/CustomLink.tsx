@@ -33,18 +33,3 @@ export const CustomLink = ({ href, title, className }: CustomLinkProps) => {
     </motion.div>
   );
 };
-
-{/* <motion.div
-  initial={{ rotate: 45, top: '25%', right: -100 }}
-  animate={{
-    top: '6%',
-    right: '15px',
-
-    transition: { duration: 1, delay: 0.5, type: 'spring' },
-  }}
-  whileHover={{ scale: 1.1 }}
-  className={`absolute font-bold text-base z-50 w-20 flex justify-center items-center ${
-    active && 'text-white shadow-text'
-  }`}>
-  <Link href={'/about'}>About</Link>
-</motion.div>; */}

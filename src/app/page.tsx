@@ -7,6 +7,7 @@ import Promo from './components/Promo';
 import Socials from './components/Socials';
 import { motion } from 'framer-motion';
 
+
 export default function Home() {
   const [active, setActive] = useState<boolean>(false);
   const activeHandler = () => setActive(!active);

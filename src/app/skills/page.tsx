@@ -38,8 +38,6 @@ const Skill = ({ name, x, y }: SkillProps) => {
   );
 };
 
-
-
 const Skills = () => {
   return (
     <div className="relative flex flex-col w-full min-h-screen p-8">
@@ -61,7 +59,7 @@ const Skills = () => {
         </motion.div>
 
         {SkillsList.map(({ name, x, y }) => (
-          <Skill name={name} x={x} y={y} key={name}/>
+          <Skill name={name} x={x} y={y} key={name} />
         ))}
       </div>
     </div>
@@ -69,41 +67,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-
-
-
-// const Skillss = () => {
-//   return (
-//     <div className="">
-//       <div className="absolute inset-0 bg-black -z-50" />
-//       <Logo textColor="white" />
-//       <ParticlesComponent config={darkConfig} />
-//       <h2 className="absolute z-50 text-4xl font-bold text-center text-white top-20 right-1/2 translate-x-1/2 lg:text-8xl lg:top-0">
-//         Skills
-//       </h2>
-//       <div className="relative flex items-center justify-center w-full h-[80%] lg:h-[100%] bg-circularLight lg:bg-circularLightLg rounded-full">
-//         <motion.div className="flex items-center justify-center p-5 font-semibold text-black bg-white rounded-full cursor-pointer">
-//           Web
-//         </motion.div>
-//         {[
-//           { name: 'HTML', x: '35vw', y: '-25vh' },
-//           { name: 'CSS', x: '35vw', y: '-5vh' },
-//           { name: 'Javascript', x: '-35vw', y: '25vh' },
-//           { name: 'React', x: '-20vw', y: '5vh' },
-//           { name: 'NextJs', x: '5vw', y: '-32vh' },
-//           { name: 'Redux Toolkit', x: '15vw', y: '35vh' },
-//           { name: 'MongoDb', x: '-7vw', y: '27vh' },
-//           { name: 'ExpressJs', x: '-22vw', y: '-33vh' },
-//           { name: 'Tailwind CSS', x: '30vw', y: '18vh' },
-//           { name: 'Git', x: '-35vw', y: '-10vh' },
-//         ].map((skill) => (
-//           <Skill key={skill.name} name={skill.name} x={skill.x} y={skill.y} />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Skillss;

@@ -14,20 +14,7 @@ interface FeaturedProjectProps {
 
 const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedProjectProps) => {
   return (
-    <article
-      className="  
-    w-full 
-    p-5 lg:p-9 
-  
-    flex flex-col lg:flex-row 
-    items-center justify-between gap-y-3
-    
-    relative 
-  
-    rounded-3xl rounded-br-2xl 
-    border border-solid border-dark 
-    
-    bg-light shadow-2xl">
+    <article className="w-full p-5 lg:p-9 flex flex-col lg:flex-row items-center justify-between gap-y-3 relative rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
 
       <Link
